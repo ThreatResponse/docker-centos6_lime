@@ -3,6 +3,8 @@
 FROM centos:6.7
 MAINTAINER Andrew Krug <andrewkrug@gmail.com> 
 
+RUN yum clean all
+
 RUN yum update -y
 
 RUN mkdir -p /usr/src/kernels
