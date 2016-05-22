@@ -7,11 +7,15 @@ RUN yum clean all
 
 RUN yum update -y
 
+RUN yum clean all 
+
 RUN mkdir -p /usr/src/kernels
 
 RUN yum install make -y
 
 RUN yum install git -y
+
+RUN yum clean all
 
 WORKDIR /usr/src/kernels
 
