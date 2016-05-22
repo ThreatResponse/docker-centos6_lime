@@ -3,7 +3,7 @@
 FROM centos:6.7
 MAINTAINER Andrew Krug <andrewkrug@gmail.com> 
 
-RUN rpm --rebuilddb 
+RUN rpm --rebuilddb && yum clean all && yum update -y 
 
 RUN yum install git -y
 
